@@ -4,260 +4,289 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Arzu Restaurant — Authentic Uyghur &amp; Middle Eastern cuisine in Mount Prospect, IL. Hand-pulled noodles, lamb dishes, fresh halal food. Open daily 11 AM – 11 PM." />
-  <title>Arzu Restaurant | Authentic Uyghur &amp; Middle Eastern Cuisine — Mount Prospect, IL</title>
+  <title>Arzu Restaurant | Authentic Uyghur &amp; Middle Eastern Cuisine</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+<!-- NAV -->
 <header id="header">
   <nav class="nav container">
-    <a href="#" class="nav-logo">ARZU<span>RESTAURANT</span></a>
-    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">☰</button>
+    <a href="#" class="nav-logo">Arzu</a>
+    <button class="nav-toggle" aria-label="Open menu" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
     <ul class="nav-links" id="navLinks">
       <li><a href="#menu"    onclick="closeMenu()">Menu</a></li>
       <li><a href="#about"   onclick="closeMenu()">About</a></li>
       <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
-      <li><a href="#reviews" onclick="closeMenu()">Reviews</a></li>
       <li><a href="#contact" onclick="closeMenu()">Find Us</a></li>
-      <li><a href="tel:+18472625987" class="btn-nav" onclick="closeMenu()">Reserve a Table</a></li>
+      <li><a href="tel:+18472625987" class="btn-nav" onclick="closeMenu()">Reserve</a></li>
     </ul>
   </nav>
 </header>
 
+<!-- HERO -->
 <section class="hero" id="home">
-  <div class="hero-overlay"></div>
-  <div class="hero-content container">
-    <p class="hero-tag">Mount Prospect · Illinois · Halal</p>
-    <h1>Bold Flavors.<br>Ancient Roots.</h1>
-    <p class="hero-sub">Authentic Uyghur &amp; Middle Eastern cuisine crafted with tradition. Hand-pulled noodles, slow-braised meats, and warm hospitality — every day.</p>
-    <div class="hero-ctas">
-      <a href="tel:+18472625987" class="btn btn-primary">Reserve a Table</a>
-      <a href="#menu" class="btn btn-outline">Explore the Menu</a>
+  <div class="hero-left">
+    <p class="hero-tag">Halal · Mount Prospect, IL</p>
+    <h1>Where the<br><em>Silk Road</em><br>Meets Your Table</h1>
+    <p class="hero-sub">Authentic Uyghur &amp; Middle Eastern cooking — hand-pulled noodles, slow-braised lamb, and flavors carried across generations.</p>
+    <div class="hero-actions">
+      <a href="tel:+18472625987" class="btn btn-dark">Reserve a Table</a>
+      <a href="#menu" class="btn btn-ghost">See the Menu ↓</a>
     </div>
-    <div class="hero-hours">
-      <span class="dot green"></span> Open Daily · 11:00 AM – 11:00 PM
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      <span>Open Today · 11 AM – 11 PM</span>
     </div>
   </div>
-  <div class="hero-scroll" onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
-    <span>↓</span>
+  <div class="hero-right">
+    <div class="hero-img-main">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Middle Eastern food spread" />
+    </div>
+    <div class="hero-img-accent">
+      <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=400&q=80" alt="Hand-pulled noodles" />
+    </div>
+    <div class="hero-float-tag">
+      <span class="float-icon">⭐</span>
+      <div>
+        <strong>4.6 / 5</strong>
+        <span>Google Reviews</span>
+      </div>
+    </div>
   </div>
 </section>
 
-<div class="strip">
-  <div class="container strip-inner">
-    <div class="strip-item"><strong>100% Halal</strong><span>Certified ingredients</span></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><strong>Open Daily</strong><span>11 AM – 11 PM</span></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><strong>Mount Prospect</strong><span>1742 W Golf Rd</span></div>
-    <div class="strip-divider"></div>
-    <div class="strip-item"><strong>Dine In &amp; Takeout</strong><span>(847) 262-5987</span></div>
+<!-- FEATURES BAR -->
+<div class="features-bar">
+  <div class="container features-inner">
+    <div class="feature"><span class="feature-icon">🕌</span><span>100% Halal Certified</span></div>
+    <div class="feature-sep"></div>
+    <div class="feature"><span class="feature-icon">🕐</span><span>Open Daily 11 AM – 11 PM</span></div>
+    <div class="feature-sep"></div>
+    <div class="feature"><span class="feature-icon">📍</span><span>1742 W Golf Rd, Mount Prospect</span></div>
+    <div class="feature-sep"></div>
+    <div class="feature"><span class="feature-icon">🚗</span><span>Dine In · Takeout · Delivery</span></div>
   </div>
 </div>
 
+<!-- MENU -->
 <section class="section" id="menu">
   <div class="container">
     <div class="section-header">
-      <p class="section-tag">What We Serve</p>
-      <h2>Our Menu</h2>
-      <p class="section-sub">Every dish is made to order using fresh halal ingredients and recipes passed down through generations.</p>
+      <p class="section-tag">Crafted with Tradition</p>
+      <h2>Our Dishes</h2>
     </div>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">🍜</div>
-        <h3>Laghman Noodles</h3>
-        <p>Hand-pulled noodles tossed with slow-cooked lamb, peppers, and aromatic spices. A true Uyghur classic.</p>
-        <div class="service-price">Signature Dish</div>
-      </div>
-      <div class="service-card featured">
-        <div class="service-badge">Most Popular</div>
-        <div class="service-icon">🥙</div>
-        <h3>Chicken Shawarma</h3>
-        <p>Tender marinated chicken wrapped in fresh flatbread with garlic sauce, pickles, and roasted vegetables.</p>
-        <div class="service-price">Customer Favorite</div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🍖</div>
-        <h3>Lamb Shank</h3>
-        <p>Slow-braised lamb shank in a rich sauce with root vegetables. Fall-off-the-bone tender every time.</p>
-        <div class="service-price">Chef's Special</div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🥟</div>
-        <h3>Manty &amp; Somsa</h3>
-        <p>Steamed dumplings filled with spiced lamb, and flaky tandoor-baked pastries stuffed with meat and onion.</p>
-        <div class="service-price">Starter</div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🍚</div>
-        <h3>Plov (Rice Pilaf)</h3>
-        <p>Fragrant rice slow-cooked with tender lamb, carrots, raisins, and cumin. The heart of Central Asian cooking.</p>
-        <div class="service-price">Traditional</div>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🍮</div>
-        <h3>Baklava &amp; Sweets</h3>
-        <p>Layers of flaky pastry with honey, pistachios, and walnuts. Paired perfectly with our aromatic tea.</p>
-        <div class="service-price">Dessert</div>
-      </div>
-    </div>
-    <p class="services-note">Call <a href="tel:+18472625987">(847) 262-5987</a> to ask about daily specials, dietary accommodations, or group reservations.</p>
-  </div>
-</section>
+    <div class="menu-grid">
 
-<section class="section section-dark" id="about">
-  <div class="container about-layout">
-    <div class="about-visual">
-      <div class="about-img-wrap">
-        <div class="about-img-block top"></div>
-        <div class="about-img-block bottom"></div>
-        <div class="about-badge-float">
-          <span class="badge-num">4.6</span>
-          <span class="badge-text">Google Rating</span>
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=600&q=80" alt="Laghman noodles" />
+          <span class="menu-label">Signature</span>
+        </div>
+        <div class="menu-body">
+          <h3>Laghman Noodles</h3>
+          <p>Hand-pulled noodles with slow-cooked lamb, peppers, and aromatic spices. Our most beloved dish.</p>
         </div>
       </div>
+
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1544025162-d76538b2a096?auto=format&fit=crop&w=600&q=80" alt="Shawarma and kebabs" />
+          <span class="menu-label popular">Most Popular</span>
+        </div>
+        <div class="menu-body">
+          <h3>Chicken Shawarma</h3>
+          <p>Marinated chicken wrapped in fresh flatbread with garlic sauce, pickles, and roasted vegetables.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1529042410759-befb1204b468?auto=format&fit=crop&w=600&q=80" alt="Lamb shank" />
+        </div>
+        <div class="menu-body">
+          <h3>Lamb Shank</h3>
+          <p>Slow-braised in rich spiced broth with root vegetables. Fall-off-the-bone tender.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Dumplings manty" />
+        </div>
+        <div class="menu-body">
+          <h3>Manty &amp; Somsa</h3>
+          <p>Steamed lamb dumplings and flaky tandoor-baked pastries stuffed with spiced meat and onion.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1590301157890-4810ed352733?auto=format&fit=crop&w=600&q=80" alt="Plov rice pilaf" />
+        </div>
+        <div class="menu-body">
+          <h3>Plov</h3>
+          <p>Fragrant rice slow-cooked with lamb, carrots, raisins, and cumin — the heart of Central Asian cooking.</p>
+        </div>
+      </div>
+
+      <div class="menu-card">
+        <div class="menu-img">
+          <img src="https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=600&q=80" alt="Baklava sweets" />
+        </div>
+        <div class="menu-body">
+          <h3>Baklava &amp; Sweets</h3>
+          <p>Layers of flaky pastry with honey, pistachios, and walnuts. Best enjoyed with our aromatic tea.</p>
+        </div>
+      </div>
+
     </div>
-    <div class="about-text">
-      <p class="section-tag">Our Story</p>
-      <h2>A Taste of the Silk Road</h2>
-      <p>Arzu brings the rich culinary traditions of Uyghur and Middle Eastern cooking to Mount Prospect. Our recipes are rooted in Central Asian heritage — bold spices, hand-crafted doughs, and techniques refined over generations.</p>
-      <p>Every plate that leaves our kitchen is made with care and passion. From the hand-pulled laghman noodles to the slow-braised lamb, we take no shortcuts. This is real food, made for real people.</p>
-      <ul class="about-list">
-        <li>✓ 100% Halal certified kitchen</li>
-        <li>✓ Authentic Uyghur &amp; Middle Eastern recipes</li>
-        <li>✓ Dine in, takeout &amp; delivery available</li>
-        <li>✓ Open seven days a week</li>
-      </ul>
-      <a href="tel:+18472625987" class="btn btn-primary">Call Us: (847) 262-5987</a>
+    <div class="menu-cta">
+      <p>Daily specials available · Call <a href="tel:+18472625987">(847) 262-5987</a> for full menu &amp; group bookings</p>
     </div>
   </div>
 </section>
 
-<section class="section" id="gallery">
+<!-- ABOUT -->
+<section class="about-section" id="about">
+  <div class="about-image">
+    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Elegant restaurant food" />
+    <div class="about-image-overlay"></div>
+  </div>
+  <div class="about-content container">
+    <div class="about-box">
+      <p class="section-tag">Our Story</p>
+      <h2>A Taste of the<br><em>Silk Road</em></h2>
+      <p>Arzu brings the rich culinary traditions of Uyghur and Middle Eastern cooking to Mount Prospect. Our recipes are rooted in Central Asian heritage — bold spices, hand-crafted doughs, and techniques refined over centuries.</p>
+      <p>Every plate is made with care. From hand-pulled laghman to slow-braised lamb, we take no shortcuts. Real food, made for real people.</p>
+      <ul class="about-list">
+        <li><span class="check">✓</span> 100% Halal certified kitchen</li>
+        <li><span class="check">✓</span> Authentic Uyghur &amp; Middle Eastern recipes</li>
+        <li><span class="check">✓</span> Dine in, takeout &amp; delivery</li>
+        <li><span class="check">✓</span> Open every day of the week</li>
+      </ul>
+      <a href="tel:+18472625987" class="btn btn-dark">(847) 262-5987</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section bg-cream" id="gallery">
   <div class="container">
     <div class="section-header">
-      <p class="section-tag">The Experience</p>
-      <h2>Food &amp; Atmosphere</h2>
-      <p class="section-sub">Warm hospitality, vibrant flavors, and a welcoming space to gather.</p>
+      <p class="section-tag">Food &amp; Atmosphere</p>
+      <h2>A Feast for the Eyes</h2>
     </div>
     <div class="gallery-grid">
-      <div class="gallery-item g-tall gallery-stripe-1"><div class="gallery-placeholder"><span class="gallery-icon">🍜</span><span>Laghman</span></div></div>
-      <div class="gallery-item gallery-stripe-2"><div class="gallery-placeholder"><span class="gallery-icon">🥙</span><span>Shawarma</span></div></div>
-      <div class="gallery-item gallery-stripe-3"><div class="gallery-placeholder"><span class="gallery-icon">🥟</span><span>Manty</span></div></div>
-      <div class="gallery-item g-wide gallery-stripe-4"><div class="gallery-placeholder"><span class="gallery-icon">🍽</span><span>The Restaurant</span></div></div>
-      <div class="gallery-item gallery-stripe-5"><div class="gallery-placeholder"><span class="gallery-icon">🍚</span><span>Plov</span></div></div>
-    </div>
-    <p class="gallery-note">Photos coming soon — visit us at 1742 W Golf Rd or <a href="https://www.yelp.com/biz/arzu-mount-prospect-2" target="_blank" rel="noopener noreferrer">see us on Yelp</a></p>
-  </div>
-</section>
-
-<section class="section section-accent" id="reviews">
-  <div class="container">
-    <div class="section-header">
-      <p class="section-tag">What People Say</p>
-      <h2>Find Us &amp; Leave a Review</h2>
-      <p class="section-sub">Rated 4.6 stars on Google. We let our food and hospitality do the talking.</p>
-    </div>
-    <div class="reviews-quotes">
-      <div class="quote-card">
-        <p class="quote-text">"The food was absolutely delicious — fresh, flavorful, and beautifully presented. The staff were attentive and kind. I highly recommend Arzu."</p>
-        <p class="quote-author">— Google Review</p>
+      <div class="g1">
+        <img src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=800&q=80" alt="Middle Eastern spread" />
       </div>
-      <div class="quote-card">
-        <p class="quote-text">"Best laghman noodles I've had outside of Central Asia. The lamb was tender, the broth was rich. This place is a hidden gem in Mount Prospect."</p>
-        <p class="quote-author">— Yelp Review</p>
+      <div class="g2">
+        <img src="https://images.unsplash.com/photo-1544025162-d76538b2a096?auto=format&fit=crop&w=600&q=80" alt="Grilled meats" />
       </div>
-      <div class="quote-card">
-        <p class="quote-text">"Authentic and hearty. The plov and somsa were incredible. A must-visit for anyone who loves Uyghur or Middle Eastern food."</p>
-        <p class="quote-author">— Google Review</p>
+      <div class="g3">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=600&q=80" alt="Restaurant interior" />
       </div>
-    </div>
-    <div class="platform-grid">
-      <a href="https://www.yelp.com/biz/arzu-mount-prospect-2" target="_blank" rel="noopener noreferrer" class="platform-card">
-        <div class="platform-logo yelp">
-          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M20.16 12.73l-4.703 1.14c-.657.16-1.24-.44-1.04-1.09l1.64-5.18c.197-.617.94-.79 1.39-.31l3.07 4.04c.448.59.2 1.24-.357 1.4zm-7.44 4.1l-.93 4.83c-.13.68-.87.98-1.4.57L7.02 19.5c-.53-.41-.47-1.18.12-1.5l4.22-2.35c.59-.33 1.3.07 1.36.73zm-5.42-4.8L2.63 13.9c-.65.2-.94.94-.54 1.48l2.47 3.35c.4.55 1.18.47 1.47-.14l1.6-3.44c.28-.6-.07-1.3-.72-1.4zm.7-2.26c.14-.64-.43-1.23-1.08-1.06L2.13 9.9c-.65.17-.86.96-.38 1.42l3.47 3.24c.48.45 1.2.16 1.3-.47zm6.54-6.4L12.77.91c-.22-.66-.97-.86-1.46-.4L9.17 2.62c-.5.46-.37 1.24.25 1.5l4.52 1.9c.62.26 1.3-.2 1.2-.86z"/></svg>
-          <span>Yelp</span>
-        </div>
-        <p>Read reviews &amp; check in on Yelp</p>
-        <span class="platform-link">View on Yelp →</span>
-      </a>
-      <a href="https://maps.google.com/?q=Arzu+Restaurant+1742+W+Golf+Rd+Mount+Prospect+IL" target="_blank" rel="noopener noreferrer" class="platform-card">
-        <div class="platform-logo google">
-          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-          <span>Google</span>
-        </div>
-        <p>4.6 ★ on Google Maps — leave us a review</p>
-        <span class="platform-link">View on Google →</span>
-      </a>
-      <a href="https://www.instagram.com/arzu_chicago/" target="_blank" rel="noopener noreferrer" class="platform-card">
-        <div class="platform-logo instagram">
-          <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          <span>Instagram</span>
-        </div>
-        <p>Follow us @arzu_chicago for food photos &amp; updates</p>
-        <span class="platform-link">Follow on Instagram →</span>
-      </a>
+      <div class="g4">
+        <img src="https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&fit=crop&w=600&q=80" alt="Dumplings" />
+      </div>
+      <div class="g5">
+        <img src="https://images.unsplash.com/photo-1555126634-323283e090fa?auto=format&fit=crop&w=800&q=80" alt="Noodle dish" />
+      </div>
     </div>
   </div>
 </section>
 
-<section class="section" id="contact">
+<!-- REVIEWS -->
+<section class="section" id="reviews">
   <div class="container">
     <div class="section-header">
-      <p class="section-tag">Come Dine With Us</p>
+      <p class="section-tag">What Guests Say</p>
+      <h2>Loved by the Community</h2>
+    </div>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"The food was absolutely delicious — fresh, flavorful, beautifully presented. The staff were so kind. I highly recommend Arzu to everyone."</p>
+        <span class="reviewer">— Google Review</span>
+      </div>
+      <div class="review-card featured-review">
+        <div class="stars">★★★★★</div>
+        <p>"Best laghman noodles I've had outside of Central Asia. The lamb was tender, the broth was rich. A hidden gem in Mount Prospect."</p>
+        <span class="reviewer">— Yelp Review</span>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Authentic and hearty. The plov and somsa were incredible. A must-visit for anyone who loves Uyghur or Middle Eastern food."</p>
+        <span class="reviewer">— Google Review</span>
+      </div>
+    </div>
+    <div class="review-platforms">
+      <a href="https://www.yelp.com/biz/arzu-mount-prospect-2" target="_blank" rel="noopener noreferrer">Read more on Yelp →</a>
+      <a href="https://maps.google.com/?q=Arzu+Restaurant+1742+W+Golf+Rd+Mount+Prospect+IL" target="_blank" rel="noopener noreferrer">Leave a Google review →</a>
+      <a href="https://www.instagram.com/arzu_chicago/" target="_blank" rel="noopener noreferrer">Follow @arzu_chicago →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section bg-cream" id="contact">
+  <div class="container contact-layout">
+    <div class="contact-info">
+      <p class="section-tag">Visit Us</p>
       <h2>Hours &amp; Location</h2>
+      <div class="info-group">
+        <h4>Address</h4>
+        <p>1742 W Golf Rd<br>Mount Prospect, IL 60056</p>
+        <a href="https://maps.google.com/?q=1742+W+Golf+Rd+Mount+Prospect+IL+60056" target="_blank" rel="noopener noreferrer" class="btn btn-dark btn-sm">Get Directions</a>
+      </div>
+      <div class="info-group">
+        <h4>Hours</h4>
+        <table class="hours-table">
+          <tr><td>Monday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Tuesday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Wednesday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Thursday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Friday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Saturday</td><td>11:00 AM – 11:00 PM</td></tr>
+          <tr><td>Sunday</td><td>11:00 AM – 11:00 PM</td></tr>
+        </table>
+      </div>
+      <div class="info-group">
+        <h4>Phone</h4>
+        <a href="tel:+18472625987" class="contact-phone">(847) 262-5987</a>
+      </div>
     </div>
-    <div class="contact-layout">
-      <div class="contact-info">
-        <div class="info-block">
-          <h3>📍 Address</h3>
-          <p>1742 W Golf Rd<br>Mount Prospect, IL 60056</p>
-          <a href="https://maps.google.com/?q=1742+W+Golf+Rd+Mount+Prospect+IL+60056" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Get Directions</a>
-        </div>
-        <div class="info-block">
-          <h3>🕐 Hours</h3>
-          <table class="hours-table">
-            <tr><td>Monday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Tuesday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Wednesday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Thursday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Friday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Saturday</td><td>11:00 AM – 11:00 PM</td></tr>
-            <tr><td>Sunday</td><td>11:00 AM – 11:00 PM</td></tr>
-          </table>
-        </div>
-        <div class="info-block">
-          <h3>📞 Contact</h3>
-          <p><a href="tel:+18472625987" class="contact-phone">(847) 262-5987</a></p>
-          <p style="color:#666;font-size:.9rem">Walk-ins welcome. Call ahead for large groups.</p>
-        </div>
-      </div>
-      <div class="contact-map">
-        <iframe src="https://maps.google.com/maps?q=1742+W+Golf+Rd,+Mount+Prospect,+IL+60056&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Arzu Restaurant on Google Maps"></iframe>
-      </div>
+    <div class="contact-map">
+      <iframe src="https://maps.google.com/maps?q=1742+W+Golf+Rd,+Mount+Prospect,+IL+60056&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Arzu Restaurant on Google Maps"></iframe>
     </div>
   </div>
 </section>
 
-<section class="booking-cta">
-  <div class="container booking-cta-inner">
-    <div>
-      <h2>Ready to Experience Arzu?</h2>
-      <p>Walk in anytime or call ahead to reserve your table.</p>
-    </div>
-    <div class="booking-cta-actions">
-      <a href="tel:+18472625987" class="btn btn-primary btn-lg">Call to Reserve</a>
-      <a href="#menu" class="btn btn-outline btn-lg">View Menu</a>
+<!-- FINAL CTA -->
+<section class="cta-section">
+  <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1400&q=80" alt="Restaurant atmosphere" class="cta-bg" />
+  <div class="cta-overlay"></div>
+  <div class="cta-content container">
+    <h2>Come Dine With Us Tonight</h2>
+    <p>Walk in or call ahead — we'd love to have you at our table.</p>
+    <div class="cta-actions">
+      <a href="tel:+18472625987" class="btn btn-gold">Call (847) 262-5987</a>
+      <a href="https://maps.google.com/?q=1742+W+Golf+Rd+Mount+Prospect+IL+60056" target="_blank" rel="noopener noreferrer" class="btn btn-outline-white">Get Directions</a>
     </div>
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container footer-inner">
     <div class="footer-brand">
-      <p class="footer-logo">ARZU<span>RESTAURANT</span></p>
+      <p class="footer-logo">Arzu</p>
+      <p>Authentic Uyghur &amp; Middle Eastern Cuisine</p>
       <p>1742 W Golf Rd · Mount Prospect, IL 60056</p>
       <p>(847) 262-5987</p>
     </div>
@@ -268,12 +297,15 @@
       <a href="#reviews">Reviews</a>
       <a href="#contact">Location</a>
     </div>
-    <div class="footer-social">
+    <div class="footer-right">
       <p>Open Daily · 11 AM – 11 PM</p>
-      <a href="https://www.instagram.com/arzu_chicago/" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary">Follow on Instagram</a>
+      <p class="halal-badge">☪ 100% Halal Certified</p>
+      <a href="https://www.instagram.com/arzu_chicago/" target="_blank" rel="noopener noreferrer" class="footer-ig">Instagram @arzu_chicago</a>
     </div>
   </div>
-  <div class="footer-bottom"><p>© 2026 Arzu Restaurant · Mount Prospect, IL · 100% Halal</p></div>
+  <div class="footer-bottom">
+    <p>© 2026 Arzu Restaurant · Mount Prospect, IL</p>
+  </div>
 </footer>
 
 <script src="script.js"></script>
