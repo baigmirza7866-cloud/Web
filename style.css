@@ -107,6 +107,25 @@ em { font-style: italic; color: var(--terracotta); }
 .menu-cta { text-align: center; color: var(--muted); font-size: .92rem; }
 .menu-cta a { color: var(--terracotta); font-weight: 600; text-decoration: underline; }
 
+/* MENU CATEGORIES */
+.menu-cats { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; margin-bottom: 48px; }
+.menu-cat { background: var(--white); border: 1px solid var(--cream-dk); border-radius: 14px; overflow: hidden; }
+.menu-cat-header { display: flex; align-items: center; gap: 12px; padding: 20px 24px 16px; border-bottom: 1px solid var(--cream-dk); background: var(--cream); }
+.cat-icon { font-size: 1.4rem; }
+.menu-cat-header h3 { font-family: var(--font-serif); font-size: 1.25rem; color: var(--brown); margin: 0; }
+.menu-items-list { padding: 8px 0; }
+.menu-item { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; padding: 14px 24px; border-bottom: 1px solid var(--cream); }
+.menu-item:last-child { border-bottom: none; }
+.menu-item-info { flex: 1; }
+.menu-item-info strong { display: block; font-size: .95rem; color: var(--brown); margin-bottom: 2px; font-weight: 600; }
+.menu-item-info span { font-size: .82rem; color: var(--muted); line-height: 1.4; }
+.menu-item-price { font-family: var(--font-serif); font-size: 1.05rem; font-weight: 600; color: var(--terracotta); white-space: nowrap; padding-top: 2px; }
+.menu-cta { text-align: center; display: flex; flex-direction: column; align-items: center; gap: 16px; }
+.menu-cta p { color: var(--muted); font-size: .9rem; }
+.menu-cta a.btn { margin-bottom: 4px; }
+.menu-cta p a { color: var(--terracotta); font-weight: 600; text-decoration: underline; }
+.section-sub { color: var(--muted); font-size: 1rem; margin-top: 10px; }
+
 /* ABOUT */
 .about-section { position: relative; min-height: 680px; display: flex; align-items: center; overflow: hidden; }
 .about-image { position: absolute; inset: 0; }
@@ -184,6 +203,7 @@ em { font-style: italic; color: var(--terracotta); }
 
 /* RESPONSIVE */
 @media (max-width: 1020px) {
+  .menu-cats { grid-template-columns: 1fr; }
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { margin-left: 0; padding: 100px 28px 48px; max-width: 600px; }
   .hero-right { height: 420px; }
